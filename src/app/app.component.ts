@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  gameStart(gameData:{increment:number}){
+    console.log(gameData.increment)
+  }
 }
