@@ -1,3 +1,16 @@
 <div class="container">
-  <app-game-control></app-game-control>
+	<app-game-control (gameStart)="onGameStarted($event)"></app-game-control>
+	<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4">
+      <div class="row">
+        <div class="col-6">
+			    <app-odd *ngFor="let odd of oddNumbers" [number]="odd"> </app-odd>
+        </div>
+        <div class="col-6">
+          <app-even *ngFor="let even of evenNumbers" [number]="even"></app-even>
+        </div>
+      </div>
+		</div>
+	</div>
 </div>

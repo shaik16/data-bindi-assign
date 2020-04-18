@@ -6,8 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
-  gameStart(gameData:{increment:number}){
-    console.log(gameData.increment)
+  oddNumbers:number[]=[];
+  evenNumbers:number[]=[];
+  onGameStarted(lastNumber:number){
+    if(lastNumber%2==0){
+      this.evenNumbers.push(lastNumber);
+    }else{
+      this.oddNumbers.push(lastNumber)
+    }
   }
 }

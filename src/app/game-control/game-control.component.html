@@ -1,5 +1,9 @@
 <div class="container">
 	<h1 class="text-center">Welcome To The Game</h1>
-	<button type="button" class="btn btn-primary btn-lg btn-block">Click To Start Game</button>
-	<button type="button" class="btn btn-secondary btn-lg btn-block">Click To Stop Game</button>
+	<button type="button" class="btn btn-outline-success btn-lg btn-block"
+  (click)="onStartGame()"
+  >Click To Start Game</button>
+	<button type="button" class="btn btn-outline-danger btn-lg btn-block"
+  (click)="onPauseGame()"
+  >Click To Pause Game</button>
 </div>
